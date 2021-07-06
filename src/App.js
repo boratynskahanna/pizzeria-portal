@@ -9,6 +9,9 @@ import Kitchen from './components/views/Kitchen/Kitchen';
 import { StylesProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
+import Booking from './components/views/Booking/Booking';
+import Order from './components/views/Order/Order';
+
 
 const theme = createMuiTheme({
   palette: {
@@ -29,6 +32,9 @@ function App() {
               <Route exact path={process.env.PUBLIC_URL + '/waiter'} component={Waiter} />
               <Route exact path={process.env.PUBLIC_URL + '/tables'} component={Tables} />
               <Route exact path={process.env.PUBLIC_URL + '/kitchen'} component={Kitchen} />
+              <Route exact path={process.env.PUBLIC_URL + '/tables/booking/:id'} component={Booking} />
+              <Route exact path={process.env.PUBLIC_URL + '/tables/event/:id'} component={Event} />
+              <Route exact path={process.env.PUBLIC_URL + '/order/:id'} component={Order} />
             </Switch>
           </MainLayout>
         </ThemeProvider>
