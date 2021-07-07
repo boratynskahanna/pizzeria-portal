@@ -11,6 +11,7 @@ import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
 import Booking from './components/views/Booking/Booking';
 import Order from './components/views/Order/Order';
+import Event from './components/views/Event/Event';
 
 
 const theme = createMuiTheme({
