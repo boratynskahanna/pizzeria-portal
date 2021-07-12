@@ -255,5 +255,13 @@
       "starters": ["lemonWater"]
     }
   ],
-  "booking": []
+  "booking": [],
+  "tables": [
+    { "id": "t1", "status": "free", "order": null },
+    { "id": "t2", "status": "thinking", "order": null },
+    { "id": "t3", "status": "ordered", "order": 123 },
+    { "id": "t4", "status": "prepared", "order": 234 },
+    { "id": "t5", "status": "delivered", "order": 345 },
+    { "id": "t6", "status": "paid", "order": 456 }
+  ]
 }
